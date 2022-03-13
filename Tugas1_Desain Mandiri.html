@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>[tugas1] - Pemrograman Web</title>
+    <style>
+        body{
+            background-image: url(./bonus.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center;
+            background-attachment: fixed;
+            height: 100%; }
+            .title{
+                text-align: center;
+                font-size: 2.5em;
+                color: #000;
+            font-size: Artal;
+        }
+        #container {
+            background-image:linear-gradient(to bottom right, indianred,coral,cornsilk);
+            background-size: auto;
+            border: 1px indianred solid;
+            opacity: 0.8;
+            filter:alpha(opacity=40);
+            width: 900px;
+            margin: auto;
+            padding: 10px;
+            font-style: oblique;
+            height: 100%;
+        }
+
+        #header {
+            background-color: cornsilk;
+            border-radius: 10px;
+            border: 1px coral solid;
+            height: 100px;
+        }
+
+        #menu {
+
+            background-color:cornsilk;
+            border: 1px coral solid;
+            height: 65px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        #menu ul{
+            margin-top: 10px;
+            margin-left: -20px;
+        }
+
+        #menu li {
+            background-color: coral;
+            list-style: none;
+            margin-right: 5px;
+            border-radius: 12px;
+            padding: 5px 10px 5px 10px;
+            float: right;
+            line-height: 2em;
+        }
+        #menu li a:link, a:visited {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+        }
+
+        #menu li a:hover {
+                text-decoration: underline;
+        }
+
+        #leftbar {
+            background-color:cornsilk;
+            border: 1px coral solid;
+            margin: 25px;
+            float: left;
+            opacity: 0.8;
+            filter:alpha(opacity=40);
+            line-height: 2em;
+            font-style: oblique;
+        }
+
+        #leftbar ul {
+                margin-left: -40px;
+        }
+
+        #leftbar li {
+                list-style: none;
+                padding: 5px;
+        }
+
+        #leftbar li a:link, a:visited {
+                text-decoration: none;
+                color: rgb(23, 99, 240);
+        }
+
+        #rightbar{
+            background-color:cornsilk;
+            border: 1px coral solid;
+            margin: 25px;
+            float: right;
+            opacity: 0.8;
+            filter:alpha(opacity=40);
+            line-height: 2em;
+            font-style: oblique;
+        }
+
+        #rightbar ul {
+                margin-left: -40px;
+        }
+
+        #rightbar li {
+                list-style: none;
+                padding: 5px;
+        }
+
+        #content {
+            width: 70%;
+            padding-bottom: 90px;
+            margin: 25px;
+            float: left;
+        }
+
+        #footer {
+            background-color: cornsilk;
+            border: 1px coral solid;
+            width: 880px;
+            margin margin-top: auto;
+           
+        }
+        #footer p{
+            font-weight: bold;
+            padding: 0 20px 0 20px;
+        }
+        
+        .judul {
+            font-size: 40px;
+            font-weight: bold;
+            padding: 20px 20px 0 20px;
+        }
+
+        .isi {
+            font-size: 17px;
+            padding: 0 20px 10px 20px;
+        }
+
+        .sidebar {
+            font-weight: bold;
+            padding: 10px ;
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+
+                <center>
+                    <div class="judul">"Selamat Datang di Menoewa Coffee"</div>
+                <div class="isi">Silahkan Pilih Menu makanan dan Minuman</div>
+                </center>
+                
+        </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div id="leftbar">
+                <div class="sidebar"><h2>Menu Makanan</h2></div>
+                <div class="isi">
+                    <ul>
+                        <h3>
+                        <li><a href="#">Fried Potatoes</a></li>
+                        <li><a href="#">Fried Bananas</a></li>
+                        <li><a href="#">Sesame Ball</a></li>
+                        <li><a href="#">Meatball</a></li>
+                        <li><a href="#">Spaghetti</a></li>
+                        <li><a href="#">Boil Noodle</a></li> 
+                        </h3>  
+                    </ul>
+                </div>
+            </div>
+            <div id="rightbar">
+                <div class="sidebar"><h2>Menu Minuman</h2></div>
+                <div class="isi">
+                    <ul>
+                        <h3>
+                        <li><a href="#">Coffee Blend</a></li>
+                        <li><a href="#">Real Coffee</a></li>
+                        <li><a href="#">Milk Coffee</a></li>
+                        <li><a href="#">Chocholate Coffee</a></li>
+                        <li><a href="#">Cappucino Coffee</a></li>
+                        <li><a href="#">Latte Coffee</a></li>
+                        </h3>
+                    </ul>
+                </div>
+            </div>
+            <div id="content"></div>
+                <div class="judul"> <center>Pilihan Menu</center></div>
+                <div class="isi"><h3>"Pilih Menu Sesuai Dengan Isi Kantong Anda"</h3>
+                    <ul>
+                    <h3>
+                        <center>
+                        <li>Coffee Blend</li>
+                        <li>Real Coffee</li> 
+                        <li>Milk Coffee</li>
+                        <li>Chocholate Coffee</li>
+                        <li>Cappucino Coffee</li>
+                        <li>Latte Coffee</li>
+                        <li>Fried Potatoes</li>
+                        <li>Fried Bananas</li>
+                        <li>MeatBall</li>
+                        <li>Spaghetti</li>
+                        <li>Boil Noodle</li>
+                        </center>
+                    </h3>
+                    </ul>
+                    <p>
+                       <center> Silahkan Cek Harga Sebelum Memesan</center>
+                    </p>
+                </div>
+
+                <div style="clear: both;"></div>
+            <div id="footer">
+                <center>
+                    <p>mirnamilasari'web copyright@A2020 </p>
+                </center>
+            </div>        
+        </div>
+    </body>
+    </html>
