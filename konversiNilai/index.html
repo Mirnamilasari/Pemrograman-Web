@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>KonversiNilai</title>
+</head>
+
+<script>
+function konversi(){
+var nilai_a = Number(document.getElementById("a").value);
+var nilai_huruf;
+if((nilai_a>79)&&(nilai_a<=100))
+nilai_huruf = 'A';
+if((nilai_a>69)&&(nilai_a<=79))
+nilai_huruf = 'B';
+if((nilai_a>59)&&(nilai_a<=69))
+nilai_huruf = 'C';
+if((nilai_a>49)&&(nilai_a<=59))
+nilai_huruf = 'D';
+if((nilai_a>=0)&&(nilai_a<=49))
+nilai_huruf = 'E';
+if((nilai_a<0)&&(nilai_a>100))
+nilai_huruf = 'invalid'
+
+document.getElementById("c").value = nilai_huruf;
+}
+</script>
+</head>
+</main>
+<body>
+<center><h1>Kriteria Nilai Yang Diperoleh</h1></center>
+<hr>
+<div id="judul"><center>Konversi Nilai</div></center>
+
+<center><input type="text" name="a" id="a" size="2">
+=
+<input type="text" name="c" id="c" size="20"></center>
+<br>
+<center><input type="button" name="tombol" id="tombol" value="konversi" onClick="konversi()"/></center>
+
+
+</body>
+<footer>
+    <center><h4>Mirna Milasari_20050974043_PTI2020A</h4></center> 
+</footer>
+</html>
